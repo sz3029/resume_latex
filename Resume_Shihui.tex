@@ -1,0 +1,185 @@
+%------------------------
+% Resume
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Shihui Zhu}} & Email: \href{mailto:}{sz3029@cumc.columbia.edu}\\
+  \href{https://xprilion.com}{Linkedin: https://www.linkedin.com/in/shihui-zhu-319266173/} & Mobile:~~~+1(858)-736-5630 \\
+  \href{https://github.com/sz3029}{Github: ~~github.com/sz3029} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+% undergrad
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, San Diego}{San Diego, CA}
+      {Bachelor of Science - Mathematics-CS and Bioengineering:Bioinformatics;  GPA: 3.7}{Sep. 2017 - June 2021}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Data Structures, Algorithms, Machine Learning, Databases, Bioinformatics, NGS}}}
+  % grad
+    \resumeSubheading
+      {Columbia University}{New York, NY}
+      {Master of Science - Biostatistics (Theory and Method Track);  GPA: 3.9}{Sep. 2021 - Present}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Statistics Inference, Machine Learning, Deep Learning, Data Mining, Databases, RCT, Longitudinal and Survival Analysis}}}
+    \resumeSubHeadingListEnd
+	    
+\vspace{-5pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Languages}{~~~~~~~~Python, R, SAS, SQL, C++, Bash, JAVA}
+	\resumeSubItem{Frameworks}{~~~~~~Scikit, Pytorch, TensorFlow, Pandas, Caret, Tidyverse, Flask}
+	\resumeSubItem{Tools and IDEs}{~GIT, MySQL, Pycharm, DataGrip}
+	\resumeSubItem{Platforms}{~~~~~~~~~Linux, Web, Windows, Raspberry, AWS, Azure}
+\resumeSubHeadingListEnd
+
+\vspace{-5pt}
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading{Research Assistant at Columbia University Medical Center}{New York, NY}
+    {Clinical Research (ML) (On Campus, Part-time)}{Oct. 2021 - Present}
+    \resumeItemListStart
+        \resumeItem{Data Collection and EDA}
+          {Data Cleaning, Feature Selection and AB testing for 1M rows of Clinical Data (30-day mortality) from Anesthesiology Department. Bootstrapping to accommodate Data Imbalanceness.}
+          \resumeItem{Modeling and Model Evaluation}
+          {Data Normalization and Standardization. Evaluation via CV for traditionally used subset selection and Tree Models, ML models Random Forest, XGBoosting, Logistic Regression, and DNN model.}
+          \resumeItem{Model Interpretation}{Interpreted model prediction via SHAP values. Interpreted how much each feature contributed differently among different patients.}
+      \resumeItemListEnd
+\vspace{-5pt}
+    \resumeSubheading
+		{Yrobot Inc.}{Remote}
+		{Data Analyst and Machine Learning (Internship)}{May 2022 -  Sep. 2022}
+		\resumeItemListStart
+        \resumeItem{Libraries for walking data analysis}
+          {Created python libraries that formulate the raw IMU sensor data, and design plots for patients' walking data analysis via plotly}
+        \resumeItem{DNN-based model adaptation for 3D Human Motion Estimation}
+          {Adapted the model for the company's experimental data.}
+		\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\vspace{-5pt}
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{ML - Improving Automated CLL/ALL Diagnosis via Machine Learning and CNN models on Flow Cytometry Dataset}{High-dimensional Flow Cytometry Data Classification for Leukemia patients via the UMAP and CNN models. Tech: Python, Scikit, matlibplot (June '21).
+    Project Website: \url{https://sites.google.com/ucsd.edu/group232021leukemiadiagnosis}}
+\vspace{2pt}
+\resumeSubItem{ML - Training and Comparing Machine Learning Models for HCV diagnosis}{Use linear regression, logistic regression, GLM, discriminant analysis and tree models to improve the traditional HCV diagnosis. (Oct. '21). Tech: R. Project Website: \url{https://github.com/MefiMefi/P8106_Final/blob/main/P8106_Final_Report.pdf}}
+\vspace{2pt}
+\resumeSubItem{DeepL - Improving Estimate of Prior in Variational Nonparametric Empirical Bayes (Work in Progress)}{Use CNN model to improve variational autoencoder training with self-defined loss functions. Tech: Python (Nov. '21)}
+\vspace{2pt}
+\resumeSubItem{Web Development, Database, Machine Learning - Clinical Registration Suggestion System (Work in Progress)}{Search engine for patient to search their symptoms and choose the registration type. Tech: Flask, SQL, Python (September '22)}
+\vspace{2pt}
+\resumeItem{Data Analysis and Visualization - Investigate the Influence of COVID-19 Pandemic on Personal Expenditure in the U.S.}{EDA and regression analysis on impact of COVID-19 U.S. cases on personal income and expenditure. Project Website: \url{http://sz3029.github.io/final_project/}}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+\section{Publications}
+\resumeSubHeadingListStart
+\resumeSubItem{\href{https://pubmed.ncbi.nlm.nih.gov/35491906/}{Differential Translation Elongation in Yeast Cells}}{Co-authored, published by RNA Biology, Volume 19, Issue 1. Tech: Bash, Python, IGV (November '21)}
+\vspace{2pt}
+\resumeSubItem{Interpretable machine learning models improve clinical understanding of factors with the greatest impact on perioperative mortality risk}{Work in Progress, to be published by International Anesthesia Research Society in late 2022. Tech: TensorFlow, Python, R (Oct. '21)}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+%-----------Awards-----------------
+\section{Awards and Certificates}
+\begin{description}[font=$\bullet$]
+\item {Awarded Second Prize in Clinical Research at Department of Anesthesiology, CUIMC - May, 2022}
+\vspace{-5pt}
+\item {SAS 9.4 Base Programming Certified - Jan, 2022}
+\vspace{-5pt}
+\item {College Honor and Provost Honor at UCSD - 2017 - 2021}
+
+\end{description}
+
+\vspace{-5pt}
+\section{Volunteer Experience}
+  \resumeSubHeadingListStart
+	\resumeSubheading
+    {Mentor at UCSD Bioinformatics Club}{San Diego, CA}
+    {Mentoring new undergrad Bioinformatics students}{Jan 2018 - Jan 2021}
+\vspace{5pt}
+    % \vspace{10pt}\textbf{\large{Community Experience}}
+    \resumeSubheading
+    {Maps building for disaster responses}{Remote}
+    {Teams organization, completing assigned projects from the MissingMap project website.}{Jan 2021}
+
+\resumeSubHeadingListEnd
+
+\end{document}
